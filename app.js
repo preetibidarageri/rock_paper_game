@@ -29,13 +29,13 @@ const drawGame = () =>{
 //to showwinner
 const showWinner = (userWin , userChoice , compChoice) => {
     if(userWin){
-        userChoice++;
+        userScore++;
         userscorepara.innerText = userScore;
         msg.innerText = `You Win!! Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor = "green";
     }else{
-        compChoice++;
-        compscorepara.innerText = compScore;
+        comScore++;
+        compscorepara.innerText = comScore;
         msg.innerText = `You Lost. ${compChoice} beats ${userChoice}`;
         msg.style.backgroundColor = "red";
     }
